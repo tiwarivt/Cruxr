@@ -12,7 +12,7 @@ async function generateNotes() {
   output.textContent = "";
 
   try {
-    const response = await fetch("", {
+    const response = await fetch("https://cruxr.onrender.com/api/notes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ youtubeUrl: url })
